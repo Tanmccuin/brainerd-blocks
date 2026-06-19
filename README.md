@@ -4,6 +4,16 @@ ACF-powered Gutenberg block library for the [Brainerd Theme](https://github.com/
 
 > **Status:** Pre-alpha (v0.1.0-alpha). Under active development.
 
+## The ecosystem
+
+Brainerd is three pieces that work together but stay independent:
+
+| Package | Role | Repo |
+|---------|------|------|
+| **Brainerd Theme** | FSE shell — design tokens, templates, base styles | [brainerd-theme](https://github.com/tanmccuin/brainerd-theme) |
+| **Brainerd Blocks** | ACF Gutenberg block library | This repo |
+| **Brainerd Companion** | Plugin detection + integration manager | [brainerd-companion](https://github.com/tanmccuin/brainerd-companion) |
+
 ## Requirements
 
 - WordPress 6.4+ (tested up to 7.0)
