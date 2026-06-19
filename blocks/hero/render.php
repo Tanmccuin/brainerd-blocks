@@ -70,7 +70,7 @@ if ( $is_preview ) {
 					<a class="cb-hero__cta cb-hero__cta--secondary"
 						href="<?php echo esc_url( $cta_secondary['url'] ); ?>"
 						<?php echo ( '_blank' === ( $cta_secondary['target'] ?? '' ) ) ? 'target="_blank" rel="noopener"' : ''; ?>>
-						<?php echo esc_html( $cta_secondary['title'] ?: 'Get in touch' ); ?> ↗
+						<?php echo esc_html( $cta_secondary['title'] ?: 'Get in touch' ); ?> <svg style="width:.75em;height:.75em;vertical-align:baseline;display:inline-block;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
 					</a>
 				<?php endif; ?>
 			</div>
@@ -141,4 +141,9 @@ if ( $is_preview ) {
 		</div>
 
 	</div>
+
+	<button class="cb-hero__scroll-hint" aria-label="<?php esc_attr_e( 'Scroll to content', 'brainerd' ); ?>" type="button">
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+	</button>
+
 </section>

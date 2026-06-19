@@ -102,4 +102,16 @@
       heroText.style.transform = 'translateY(0)';
     });
   }
+
+  /* ── Scroll hint — click to smooth-scroll to next section ────────────── */
+  var scrollHint = document.querySelector('.cb-hero__scroll-hint');
+  if (scrollHint) {
+    scrollHint.addEventListener('click', function () {
+      var hero = scrollHint.closest('.cb-hero');
+      var next = hero && hero.nextElementSibling;
+      if (next) {
+        next.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth' });
+      }
+    });
+  }
 })();
