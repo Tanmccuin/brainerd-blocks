@@ -1,0 +1,49 @@
+{
+  "key": "group_cb_portfolio_grid",
+  "title": "Block: Portfolio Grid",
+  "fields": [
+    {
+      "key": "field_cb_pg_section_heading",
+      "label": "Section heading",
+      "name": "section_heading",
+      "type": "text",
+      "default_value": "Selected work",
+      "wrapper": { "width": "50" }
+    },
+    {
+      "key": "field_cb_pg_limit",
+      "label": "Limit",
+      "name": "limit",
+      "type": "number",
+      "instructions": "Max entries to show. 0 = show all.",
+      "default_value": 0,
+      "min": 0,
+      "wrapper": { "width": "25" }
+    },
+    {
+      "key": "field_cb_pg_show_view_all",
+      "label": "Show 'View all' link",
+      "name": "show_view_all",
+      "type": "true_false",
+      "default_value": 0,
+      "ui": 1,
+      "wrapper": { "width": "25" }
+    },
+    {
+      "key": "field_cb_pg_view_all_label",
+      "label": "View all link label",
+      "name": "view_all_label",
+      "type": "text",
+      "default_value": "View all work",
+      "wrapper": { "width": "50" },
+      "conditional_logic": [
+        [ { "field": "field_cb_pg_show_view_all", "operator": "==", "value": "1" } ]
+      ]
+    }
+  ],
+  "location": [
+    [ { "param": "block", "operator": "==", "value": "brainerd/portfolio-grid" } ]
+  ],
+  "active": true,
+  "description": "Controls for the dynamic portfolio grid block."
+}

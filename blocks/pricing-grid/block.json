@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brainerd/pricing-grid",
+  "title": "Pricing Grid",
+  "description": "Responsive pricing tier cards with optional featured tier highlight.",
+  "category": "brainerd",
+  "icon": "money-alt",
+  "keywords": ["pricing", "plans", "tiers", "hosting", "packages"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "anchor": true
+  },
+  "style": "file:./style.css",
+  "textdomain": "brainerd"
+}

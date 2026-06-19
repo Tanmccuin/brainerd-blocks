@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brainerd/feature-grid",
+  "title": "Feature Grid",
+  "description": "A responsive grid of feature cards (icon/title/text).",
+  "category": "brainerd",
+  "icon": "grid-view",
+  "keywords": ["features", "grid", "cards"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "anchor": true,
+    "spacing": { "padding": true, "margin": true }
+  },
+  "style": "file:./style.css",
+  "textdomain": "brainerd"
+}

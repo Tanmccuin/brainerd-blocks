@@ -1,0 +1,65 @@
+{
+  "key": "group_cb_service_pillars",
+  "title": "Block: Service Pillars",
+  "fields": [
+    {
+      "key": "field_cb_sp_section_heading",
+      "label": "Section heading",
+      "name": "section_heading",
+      "type": "text",
+      "default_value": "What we do",
+      "wrapper": { "width": "100" }
+    },
+    {
+      "key": "field_cb_sp_pillars",
+      "label": "Pillars",
+      "name": "pillars",
+      "type": "repeater",
+      "min": 1,
+      "max": 6,
+      "layout": "row",
+      "button_label": "Add pillar",
+      "sub_fields": [
+        {
+          "key": "field_cb_sp_icon_svg",
+          "label": "Icon SVG",
+          "name": "icon_svg",
+          "type": "textarea",
+          "instructions": "Paste a single <svg> element. Use stroke-based icons at 24×24 viewBox.",
+          "rows": 3,
+          "wrapper": { "width": "100" }
+        },
+        {
+          "key": "field_cb_sp_heading",
+          "label": "Heading",
+          "name": "heading",
+          "type": "text",
+          "required": 1,
+          "wrapper": { "width": "50" }
+        },
+        {
+          "key": "field_cb_sp_link",
+          "label": "Link",
+          "name": "link",
+          "type": "link",
+          "return_format": "array",
+          "wrapper": { "width": "50" }
+        },
+        {
+          "key": "field_cb_sp_body",
+          "label": "Body",
+          "name": "body",
+          "type": "wysiwyg",
+          "toolbar": "basic",
+          "media_upload": 0,
+          "wrapper": { "width": "100" }
+        }
+      ]
+    }
+  ],
+  "location": [
+    [ { "param": "block", "operator": "==", "value": "brainerd/service-pillars" } ]
+  ],
+  "active": true,
+  "description": "Repeater of service pillar cards."
+}

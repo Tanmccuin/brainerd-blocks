@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brainerd/contact-form",
+  "title": "Contact Form",
+  "description": "Native block-editor contact form. Submissions routed via admin-post.php handler in mu-plugins/snippets/contact-form-handler.php.",
+  "category": "brainerd",
+  "icon": "email",
+  "keywords": ["contact", "form", "email"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "anchor": true
+  },
+  "style": "file:./style.css",
+  "textdomain": "brainerd"
+}

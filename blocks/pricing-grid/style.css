@@ -1,0 +1,211 @@
+/* Pricing Grid — modern tier cards */
+
+.cb-pricing-grid {
+	background-color: var(--tmd-bg);
+	padding-block: var(--wp--preset--spacing--80, 6rem);
+	padding-inline: var(--wp--preset--spacing--60, 2.5rem);
+}
+
+.cb-pricing-grid__inner {
+	max-width: var(--wp--style--global--wide-size, 1200px);
+	margin-inline: auto;
+}
+
+/* ── Section header ── */
+.cb-pricing-grid__header {
+	text-align: center;
+	max-width: 540px;
+	margin: 0 auto 3rem;
+}
+
+.cb-pricing-grid__title {
+	font-family: 'Fraunces', serif;
+	font-weight: 700;
+	font-size: var(--wp--preset--font-size--2xl, clamp(2rem, 4vw, 2.75rem));
+	color: var(--tmd-heading);
+	margin: 0 0 0.75rem;
+	letter-spacing: -0.01em;
+}
+
+.cb-pricing-grid__subtext {
+	font-size: 1rem;
+	color: var(--tmd-muted);
+	margin: 0;
+	line-height: 1.6;
+}
+
+/* ── Tier grid ── */
+.cb-pricing-grid__tiers {
+	display: grid;
+	gap: 1.25rem;
+	align-items: start;
+}
+.cb-pricing-grid__tiers--2 { grid-template-columns: repeat(2, 1fr); }
+.cb-pricing-grid__tiers--3 { grid-template-columns: repeat(3, 1fr); }
+.cb-pricing-grid__tiers--4 { grid-template-columns: repeat(4, 1fr); }
+
+/* ── Card ── */
+.cb-pricing-grid__card {
+	position: relative;
+	background: var(--tmd-surf);
+	border: 1px solid var(--tmd-border);
+	border-radius: var(--tmd-radius-lg, 10px);
+	padding: 2rem 1.75rem 2.25rem;
+	display: flex;
+	flex-direction: column;
+	transition: border-color var(--tmd-transition);
+}
+.cb-pricing-grid__card:hover {
+	border-color: var(--tmd-muted);
+}
+
+/* Featured tier */
+.cb-pricing-grid__card--featured {
+	border-color: var(--tmd-accent);
+	border-width: 2px;
+	padding-top: 2.5rem;
+}
+.cb-pricing-grid__card--featured:hover {
+	border-color: var(--tmd-accent);
+}
+
+.cb-pricing-grid__badge {
+	position: absolute;
+	top: -11px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: var(--tmd-accent);
+	color: #fff;
+	font-size: 0.6875rem;
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	padding: 3px 14px;
+	border-radius: 20px;
+	white-space: nowrap;
+}
+
+/* ── Name ── */
+.cb-pricing-grid__name {
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	font-size: 0.9375rem;
+	color: var(--tmd-heading);
+	margin: 0 0 1rem;
+	letter-spacing: 0.01em;
+}
+
+/* ── Price ── */
+.cb-pricing-grid__price {
+	display: flex;
+	align-items: baseline;
+	gap: 2px;
+	margin-bottom: 0.5rem;
+}
+
+.cb-pricing-grid__amount {
+	font-family: 'Fraunces', serif;
+	font-weight: 700;
+	font-size: 2.5rem;
+	color: var(--tmd-heading);
+	line-height: 1;
+	letter-spacing: -0.02em;
+}
+
+.cb-pricing-grid__suffix {
+	font-size: 0.875rem;
+	color: var(--tmd-muted);
+	font-weight: 400;
+}
+
+/* ── Tagline ── */
+.cb-pricing-grid__tagline {
+	font-size: 0.8125rem;
+	color: var(--tmd-muted);
+	margin: 0 0 1.5rem;
+	line-height: 1.5;
+}
+
+/* ── Features ── */
+.cb-pricing-grid__features {
+	list-style: none;
+	margin: 0 0 1.75rem;
+	padding: 0;
+	border-top: 1px solid var(--tmd-border);
+	padding-top: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.625rem;
+	flex: 1;
+}
+
+.cb-pricing-grid__features li {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+	font-size: 0.8125rem;
+	color: var(--tmd-body);
+	line-height: 1.5;
+}
+
+.cb-pricing-grid__features svg {
+	width: 15px;
+	height: 15px;
+	flex-shrink: 0;
+	color: var(--tmd-accent);
+	margin-top: 1px;
+}
+
+/* ── CTA button ── */
+.cb-pricing-grid__cta {
+	display: block;
+	text-align: center;
+	padding: 0.6875rem 1.5rem;
+	border-radius: var(--tmd-radius-sm, 4px);
+	font-size: 0.8125rem;
+	font-weight: 500;
+	text-decoration: none;
+	transition: background-color var(--tmd-transition), color var(--tmd-transition),
+	            border-color var(--tmd-transition);
+	margin-top: auto;
+	border: 1.5px solid var(--tmd-border);
+	background: transparent;
+	color: var(--tmd-heading);
+}
+.cb-pricing-grid__cta:hover {
+	border-color: var(--tmd-accent);
+	color: var(--tmd-accent);
+}
+
+/* Featured card CTA — filled */
+.cb-pricing-grid__card--featured .cb-pricing-grid__cta {
+	background: var(--tmd-accent);
+	border-color: var(--tmd-accent);
+	color: #fff;
+}
+.cb-pricing-grid__card--featured .cb-pricing-grid__cta:hover {
+	background: var(--tmd-accent-dark);
+	border-color: var(--tmd-accent-dark);
+	color: #fff;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+	.cb-pricing-grid__tiers--3,
+	.cb-pricing-grid__tiers--4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+	.cb-pricing-grid {
+		padding-inline: 1.25rem;
+		padding-block: var(--wp--preset--spacing--70, 4rem);
+	}
+	.cb-pricing-grid__tiers--2,
+	.cb-pricing-grid__tiers--3,
+	.cb-pricing-grid__tiers--4 { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.cb-pricing-grid__card,
+	.cb-pricing-grid__cta { transition: none; }
+}

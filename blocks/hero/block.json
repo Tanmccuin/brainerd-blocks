@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brainerd/hero",
+  "title": "Hero",
+  "description": "Split home-page hero: heading + CTA left, mosaic image grid right.",
+  "category": "brainerd",
+  "icon": "cover-image",
+  "keywords": ["hero", "banner", "cta"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full", "wide"],
+    "anchor": true,
+    "spacing": { "padding": true, "margin": true },
+    "color": { "background": true, "text": true }
+  },
+  "style": "file:./style.css",
+  "textdomain": "brainerd"
+}

@@ -1,0 +1,52 @@
+{
+  "key": "group_cb_feature_grid",
+  "title": "Block: Feature Grid",
+  "fields": [
+    {
+      "key": "field_cb_fg_heading",
+      "label": "Heading",
+      "name": "heading",
+      "type": "text"
+    },
+    {
+      "key": "field_cb_fg_features",
+      "label": "Features",
+      "name": "features",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "Add feature",
+      "sub_fields": [
+        {
+          "key": "field_cb_fg_icon",
+          "label": "Icon (emoji or text)",
+          "name": "icon",
+          "type": "text"
+        },
+        {
+          "key": "field_cb_fg_title",
+          "label": "Title",
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "key": "field_cb_fg_text",
+          "label": "Text",
+          "name": "text",
+          "type": "textarea",
+          "rows": 3
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "brainerd/feature-grid"
+      }
+    ]
+  ],
+  "active": true,
+  "description": "Fields for the Feature Grid block."
+}

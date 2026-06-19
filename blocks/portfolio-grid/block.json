@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brainerd/portfolio-grid",
+  "title": "Portfolio Grid",
+  "description": "Dynamic grid of portfolio CPT entries. Accepts a limit field (0 = all).",
+  "category": "brainerd",
+  "icon": "grid-view",
+  "keywords": ["portfolio", "grid", "work", "projects"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full", "wide"],
+    "anchor": true,
+    "spacing": { "padding": true, "margin": false }
+  },
+  "style": "file:./style.css",
+  "textdomain": "brainerd"
+}

@@ -1,0 +1,80 @@
+/* CTA Band block — light section with accent border */
+
+.cb-cta-band {
+	background-color: var(--tmd-bg);
+	border-top: 1px solid var(--tmd-border);
+	padding-block: var(--wp--preset--spacing--70, 4rem);
+	padding-inline: var(--wp--preset--spacing--60, 2.5rem);
+}
+
+.cb-cta-band__inner {
+	max-width: var(--wp--style--global--wide-size, 1200px);
+	margin-inline: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2.5rem;
+	flex-wrap: wrap;
+}
+
+.cb-cta-band__text { flex: 1; min-width: 200px; }
+
+.cb-cta-band__heading {
+	font-family: 'Fraunces', serif;
+	font-weight: 700;
+	font-size: clamp(1.75rem, 4vw, 2.5rem);
+	color: var(--tmd-heading);
+	margin: 0 0 0.5rem;
+	letter-spacing: -0.01em;
+	line-height: 1.15;
+}
+
+.cb-cta-band__subtext {
+	font-size: 0.9375rem;
+	color: var(--tmd-muted);
+	margin: 0;
+}
+
+.cb-cta-band__button {
+	background-color: var(--tmd-accent);
+	color: #ffffff;
+	padding: 0.875rem 2rem;
+	border-radius: var(--tmd-radius-sm, 4px);
+	font-size: 0.9375rem;
+	font-weight: 500;
+	text-decoration: none;
+	white-space: nowrap;
+	transition: background-color var(--tmd-transition, 0.25s ease),
+	            transform var(--tmd-transition, 0.25s ease);
+	flex-shrink: 0;
+}
+.cb-cta-band__button:hover {
+	background-color: var(--tmd-accent-dark);
+	color: #ffffff;
+	transform: translateY(-1px);
+}
+
+.cb-cta-band__footnote {
+	max-width: var(--wp--style--global--wide-size, 1200px);
+	margin: 1.5rem auto 0;
+	padding-inline: var(--wp--preset--spacing--60, 2.5rem);
+	font-size: 0.75rem;
+	color: var(--tmd-muted);
+	text-align: center;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+	.cb-cta-band {
+		padding-inline: 1.25rem;
+		padding-block: var(--wp--preset--spacing--70, 4rem);
+	}
+	.cb-cta-band__inner {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.cb-cta-band__button { transition: none; }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brainerd/cta-band",
+  "title": "CTA Band",
+  "description": "Full-width closing call-to-action band. Always dark regardless of color scheme.",
+  "category": "brainerd",
+  "icon": "megaphone",
+  "keywords": ["cta", "call to action", "contact", "band"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full", "wide"],
+    "anchor": true,
+    "spacing": { "padding": true, "margin": false }
+  },
+  "style": "file:./style.css",
+  "textdomain": "brainerd"
+}

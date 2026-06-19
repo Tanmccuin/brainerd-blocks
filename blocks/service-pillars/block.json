@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brainerd/service-pillars",
+  "title": "Service Pillars",
+  "description": "Repeater of 3+ service cards (icon, heading, body, link). Used on Home and Services pages.",
+  "category": "brainerd",
+  "icon": "grid-view",
+  "keywords": ["services", "pillars", "cards", "features"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full", "wide"],
+    "anchor": true,
+    "spacing": { "padding": true, "margin": false }
+  },
+  "style": "file:./style.css",
+  "textdomain": "brainerd"
+}

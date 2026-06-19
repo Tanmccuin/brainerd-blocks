@@ -1,0 +1,60 @@
+{
+	"key": "group_cb_portfolio",
+	"title": "Portfolio Entry Details",
+	"fields": [
+		{
+			"key": "field_cb_portfolio_client",
+			"label": "Client",
+			"name": "client",
+			"type": "text",
+			"instructions": "Client or organization name.",
+			"required": 0,
+			"wrapper": { "width": "50" }
+		},
+		{
+			"key": "field_cb_portfolio_project_url",
+			"label": "Project URL",
+			"name": "project_url",
+			"type": "url",
+			"instructions": "Live URL (optional).",
+			"required": 0,
+			"wrapper": { "width": "50" }
+		},
+		{
+			"key": "field_cb_portfolio_role",
+			"label": "Role / Scope",
+			"name": "role",
+			"type": "text",
+			"instructions": "e.g. Design & Development, Accessibility Audit",
+			"required": 0,
+			"wrapper": { "width": "50" }
+		},
+		{
+			"key": "field_cb_portfolio_year",
+			"label": "Year",
+			"name": "year",
+			"type": "number",
+			"instructions": "Year the project was completed.",
+			"required": 0,
+			"min": 2000,
+			"max": 2099,
+			"wrapper": { "width": "50" }
+		},
+		{
+			"key": "field_cb_portfolio_description",
+			"label": "Description",
+			"name": "description",
+			"type": "textarea",
+			"instructions": "Short description of the project — 1–3 sentences. Shown on the single portfolio page.",
+			"required": 0,
+			"rows": 3,
+			"wrapper": { "width": "100" }
+		}
+	],
+	"location": [
+		[ { "param": "post_type", "operator": "==", "value": "portfolio" } ]
+	],
+	"active": true,
+	"description": "Meta fields for portfolio CPT entries.",
+	"show_in_rest": 1
+}
