@@ -219,12 +219,12 @@
 @media (max-width: 900px) {
 	.cb-hero {
 		min-height: auto;
-		padding-block: 3rem;
+		padding-block: 1.5rem 2rem;
 	}
 	.cb-hero__inner {
 		grid-template-columns: 1fr;
-		gap: 2.5rem;
-		padding-block: 2rem;
+		gap: 2rem;
+		padding-block: 1rem;
 	}
 	.cb-hero__mosaic {
 		max-height: 380px;
