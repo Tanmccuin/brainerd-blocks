@@ -1,14 +1,14 @@
 <?php
 /**
  * Plugin Name:       Brainerd Blocks
- * Description:       ACF Gutenberg blocks, patterns, and block category. Companion plugin for the Brainerd FSE theme.
- * Version:           0.1.0
- * Requires PHP:      8.3
- * Requires at least: 7.0
+ * Description:       ACF Gutenberg blocks, patterns, and block category for the Br<em>ai</em>nerd theme ecosystem.
+ * Version:           0.1.04
+ * Requires PHP:      8.0
+ * Requires at least: 6.4
+ * Author:            Tannermooredesign
+ * Author URI:        https://tannermooredesign.com
  * Text Domain:       brainerd
- *
- * Single home for all custom, version-controlled site functionality that is
- * block-related. WP-CLI and Claude Code treat this plugin as source of truth.
+ * License:           GPL-2.0-or-later
  */
 
 defined( 'ABSPATH' ) || exit;
