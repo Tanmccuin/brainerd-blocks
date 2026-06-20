@@ -9,6 +9,7 @@
 .cb-portfolio-grid__inner {
 	max-width: var(--wp--style--global--wide-size, 1200px);
 	margin-inline: auto;
+	overflow: hidden;
 }
 
 /* ── Section header ── */
@@ -151,14 +152,12 @@
 
 /* ── Responsive ── */
 @media (max-width: 900px) {
-	.cb-portfolio-grid__grid { grid-template-columns: repeat(2, 1fr); }
+	.cb-portfolio-grid__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
-@media (max-width: 560px) {
-	.cb-portfolio-grid {
-		padding-inline: 1.25rem;
-	}
-	.cb-portfolio-grid__grid { grid-template-columns: 1fr; }
+@media (max-width: 600px) {
+	.cb-portfolio-grid { padding-inline: 1.25rem; }
+	.cb-portfolio-grid__grid { grid-template-columns: minmax(0, 1fr); }
 }
 
 @media (prefers-reduced-motion: reduce) {
