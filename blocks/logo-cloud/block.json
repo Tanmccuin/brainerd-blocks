@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brainerd/logo-cloud",
+  "title": "Logo Cloud",
+  "description": "Client or partner logo grid. Grayscale by default, color on hover. Optional links.",
+  "category": "brainerd",
+  "icon": "grid-view",
+  "keywords": ["logos", "clients", "partners", "trusted by", "brands"],
+  "acf": { "mode": "preview", "renderTemplate": "render.php" },
+  "supports": { "align": ["wide", "full"], "anchor": true },
+  "style": "file:./style.css",
+  "textdomain": "brainerd"
+}

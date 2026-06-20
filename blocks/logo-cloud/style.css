@@ -1,0 +1,80 @@
+/* Logo Cloud block */
+
+.cb-logo-cloud {
+	background-color: var(--tmd-bg);
+	padding-block: var(--wp--preset--spacing--70, 4rem);
+	padding-inline: var(--wp--preset--spacing--60, 2.5rem);
+}
+
+.cb-logo-cloud__inner {
+	max-width: var(--wp--style--global--wide-size, 1200px);
+	margin-inline: auto;
+}
+
+.cb-logo-cloud__header {
+	text-align: center;
+	margin: 0 0 2.5rem;
+}
+
+.cb-logo-cloud__title {
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 0.8125rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--tmd-muted);
+	margin: 0 0 0.25rem;
+}
+
+.cb-logo-cloud__subtext {
+	font-size: 0.875rem;
+	color: var(--tmd-muted);
+	margin: 0;
+}
+
+.cb-logo-cloud__grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem 3rem;
+}
+
+.cb-logo-cloud__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.cb-logo-cloud__item img {
+	max-height: 40px;
+	width: auto;
+	filter: grayscale(100%) opacity(0.5);
+	transition: filter var(--tmd-transition);
+}
+
+.cb-logo-cloud__item:hover img {
+	filter: grayscale(0%) opacity(1);
+}
+
+.cb-logo-cloud__placeholder {
+	font-size: 0.75rem;
+	font-weight: 500;
+	color: var(--tmd-muted);
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	padding: 0.75rem 1.5rem;
+	border: 1px dashed var(--tmd-border);
+	border-radius: var(--tmd-radius-sm);
+}
+
+@media (max-width: 560px) {
+	.cb-logo-cloud { padding-inline: 1.25rem; }
+	.cb-logo-cloud__grid { gap: 1.5rem 2rem; }
+	.cb-logo-cloud__item img { max-height: 32px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.cb-logo-cloud__item img { transition: none; }
+}

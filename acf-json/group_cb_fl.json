@@ -1,0 +1,20 @@
+{
+  "key": "group_cb_fl",
+  "title": "Block: Feature List",
+  "fields": [
+    { "key": "field_cb_fl_section_heading", "label": "Section Heading", "name": "section_heading", "type": "text", "wrapper": { "width": "40" } },
+    { "key": "field_cb_fl_section_subtext", "label": "Section Subtext", "name": "section_subtext", "type": "text", "wrapper": { "width": "40" } },
+    { "key": "field_cb_fl_layout", "label": "Layout", "name": "layout", "type": "select", "choices": { "stacked": "Stacked (compact)", "alternating": "Alternating (editorial)" }, "default_value": "stacked", "wrapper": { "width": "20" } },
+    {
+      "key": "field_cb_fl_features", "label": "Features", "name": "features", "type": "repeater", "min": 1, "max": 12, "layout": "block",
+      "sub_fields": [
+        { "key": "field_cb_fl_icon_key", "label": "Icon", "name": "icon_key", "type": "select", "choices": { "check": "Check", "design": "Design", "hosting": "Hosting", "consult": "Consult", "a11y": "Accessibility", "shield": "Shield", "zap": "Zap", "globe": "Globe" }, "default_value": "check", "wrapper": { "width": "20" } },
+        { "key": "field_cb_fl_heading", "label": "Heading", "name": "heading", "type": "text", "wrapper": { "width": "40" } },
+        { "key": "field_cb_fl_description", "label": "Description", "name": "description", "type": "textarea", "rows": 2, "wrapper": { "width": "40" } },
+        { "key": "field_cb_fl_link", "label": "Link (optional)", "name": "link", "type": "link", "return_format": "array", "wrapper": { "width": "100" } }
+      ]
+    }
+  ],
+  "location": [[ { "param": "block", "operator": "==", "value": "brainerd/feature-list" } ]],
+  "active": true
+}

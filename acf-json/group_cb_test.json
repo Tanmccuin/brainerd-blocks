@@ -1,0 +1,20 @@
+{
+  "key": "group_cb_test",
+  "title": "Block: Testimonials",
+  "fields": [
+    { "key": "field_cb_test_section_heading", "label": "Section Heading", "name": "section_heading", "type": "text", "wrapper": { "width": "50" } },
+    { "key": "field_cb_test_section_subtext", "label": "Section Subtext", "name": "section_subtext", "type": "text", "wrapper": { "width": "50" } },
+    { "key": "field_cb_test_layout", "label": "Layout", "name": "layout", "type": "select", "choices": { "grid": "Grid (multi-column)", "single": "Single column" }, "default_value": "grid", "wrapper": { "width": "50" } },
+    {
+      "key": "field_cb_test_testimonials", "label": "Testimonials", "name": "testimonials", "type": "repeater", "min": 1, "max": 12, "layout": "block",
+      "sub_fields": [
+        { "key": "field_cb_test_quote", "label": "Quote", "name": "quote", "type": "textarea", "rows": 3, "wrapper": { "width": "100" } },
+        { "key": "field_cb_test_name", "label": "Name", "name": "name", "type": "text", "wrapper": { "width": "33" } },
+        { "key": "field_cb_test_role", "label": "Role / Company", "name": "role", "type": "text", "wrapper": { "width": "34" } },
+        { "key": "field_cb_test_photo", "label": "Photo", "name": "photo", "type": "image", "return_format": "array", "preview_size": "thumbnail", "wrapper": { "width": "33" } }
+      ]
+    }
+  ],
+  "location": [[ { "param": "block", "operator": "==", "value": "brainerd/testimonials" } ]],
+  "active": true
+}

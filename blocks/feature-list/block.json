@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brainerd/feature-list",
+  "title": "Feature List",
+  "description": "Alternating icon + heading + description rows. Great for process steps, feature breakdowns, or value propositions.",
+  "category": "brainerd",
+  "icon": "list-view",
+  "keywords": ["features", "process", "steps", "benefits", "checklist"],
+  "acf": { "mode": "preview", "renderTemplate": "render.php" },
+  "supports": { "align": ["wide", "full"], "anchor": true },
+  "style": "file:./style.css",
+  "textdomain": "brainerd"
+}

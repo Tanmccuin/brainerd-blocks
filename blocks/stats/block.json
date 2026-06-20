@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brainerd/stats",
+  "title": "Stats / Metrics",
+  "description": "Row of number + label metric cards. Great for social proof and key figures.",
+  "category": "brainerd",
+  "icon": "chart-bar",
+  "keywords": ["stats", "metrics", "numbers", "counter", "figures"],
+  "acf": { "mode": "preview", "renderTemplate": "render.php" },
+  "supports": { "align": ["wide", "full"], "anchor": true },
+  "style": "file:./style.css",
+  "textdomain": "brainerd"
+}

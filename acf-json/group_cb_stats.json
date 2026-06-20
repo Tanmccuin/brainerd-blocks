@@ -1,0 +1,18 @@
+{
+  "key": "group_cb_stats",
+  "title": "Block: Stats / Metrics",
+  "fields": [
+    { "key": "field_cb_stats_section_heading", "label": "Section Heading (optional)", "name": "section_heading", "type": "text", "wrapper": { "width": "100" } },
+    {
+      "key": "field_cb_stats_stats", "label": "Stats", "name": "stats", "type": "repeater", "min": 2, "max": 6, "layout": "table",
+      "sub_fields": [
+        { "key": "field_cb_stats_prefix", "label": "Prefix", "name": "prefix", "type": "text", "instructions": "e.g. $, #", "wrapper": { "width": "15" } },
+        { "key": "field_cb_stats_value", "label": "Value", "name": "value", "type": "text", "wrapper": { "width": "25" } },
+        { "key": "field_cb_stats_suffix", "label": "Suffix", "name": "suffix", "type": "text", "instructions": "e.g. +, %, /5", "wrapper": { "width": "15" } },
+        { "key": "field_cb_stats_label", "label": "Label", "name": "label", "type": "text", "wrapper": { "width": "45" } }
+      ]
+    }
+  ],
+  "location": [[ { "param": "block", "operator": "==", "value": "brainerd/stats" } ]],
+  "active": true
+}

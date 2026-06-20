@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brainerd/testimonials",
+  "title": "Testimonials",
+  "description": "Client testimonials — repeater of quote, name, role, and optional photo. Grid or single-column layout.",
+  "category": "brainerd",
+  "icon": "format-quote",
+  "keywords": ["testimonial", "quote", "review", "social proof"],
+  "acf": { "mode": "preview", "renderTemplate": "render.php" },
+  "supports": { "align": ["wide", "full"], "anchor": true },
+  "style": "file:./style.css",
+  "textdomain": "brainerd"
+}
