@@ -41,4 +41,8 @@ if ( ! empty( $block['className'] ) ) {
 	<?php if ( $footnote ) : ?>
 		<p class="cb-cta-band__footnote"><?php echo esc_html( $footnote ); ?></p>
 	<?php endif; ?>
+
+	<div class="cb-cta-band__extra">
+		<InnerBlocks />
+	</div>
 </section>

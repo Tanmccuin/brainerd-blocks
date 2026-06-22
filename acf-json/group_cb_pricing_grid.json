@@ -2,24 +2,8 @@
   "key": "group_cb_pricing_grid",
   "title": "Pricing Grid",
   "fields": [
-    {
-      "key": "field_cb_pg2_section_heading",
-      "label": "Section Heading",
-      "name": "section_heading",
-      "type": "text",
-      "wrapper": {
-        "width": "50"
-      }
-    },
-    {
-      "key": "field_cb_pg2_section_subtext",
-      "label": "Section Subtext",
-      "name": "section_subtext",
-      "type": "text",
-      "wrapper": {
-        "width": "50"
-      }
-    },
+    { "key": "field_cb_pg2_section_heading", "label": "Section Heading", "name": "section_heading", "type": "text", "wrapper": { "width": "50" } },
+    { "key": "field_cb_pg2_section_subtext", "label": "Section Subtext", "name": "section_subtext", "type": "text", "wrapper": { "width": "50" } },
     {
       "key": "field_cb_pg2_tiers",
       "label": "Tiers",
@@ -29,86 +13,28 @@
       "max": 6,
       "layout": "block",
       "sub_fields": [
+        { "key": "field_cb_pg2_name", "label": "Name", "name": "name", "type": "text", "wrapper": { "width": "33" } },
+        { "key": "field_cb_pg2_price", "label": "Price", "name": "price", "type": "text", "instructions": "e.g. $25, Free", "wrapper": { "width": "22" } },
+        { "key": "field_cb_pg2_price_suffix", "label": "Suffix", "name": "price_suffix", "type": "text", "instructions": "e.g. /mo, /yr", "wrapper": { "width": "22" } },
+        { "key": "field_cb_pg2_is_featured", "label": "Featured?", "name": "is_featured", "type": "true_false", "ui": 1, "wrapper": { "width": "23" } },
         {
-          "key": "field_cb_pg2_name",
-          "label": "Tier Name",
-          "name": "name",
+          "key": "field_cb_pg2_badge_text",
+          "label": "Badge text",
+          "name": "badge_text",
           "type": "text",
-          "wrapper": {
-            "width": "33"
-          }
+          "instructions": "e.g. Popular, Best value",
+          "default_value": "Popular",
+          "wrapper": { "width": "50" },
+          "conditional_logic": [
+            [{ "field": "field_cb_pg2_is_featured", "operator": "==", "value": "1" }]
+          ]
         },
-        {
-          "key": "field_cb_pg2_price",
-          "label": "Price",
-          "name": "price",
-          "type": "text",
-          "instructions": "e.g. $25, Free, Let's talk",
-          "wrapper": {
-            "width": "22"
-          }
-        },
-        {
-          "key": "field_cb_pg2_price_suffix",
-          "label": "Suffix",
-          "name": "price_suffix",
-          "type": "text",
-          "instructions": "e.g. /mo, /yr, starting",
-          "wrapper": {
-            "width": "22"
-          }
-        },
-        {
-          "key": "field_cb_pg2_is_featured",
-          "label": "Featured?",
-          "name": "is_featured",
-          "type": "true_false",
-          "ui": 1,
-          "wrapper": {
-            "width": "23"
-          }
-        },
-        {
-          "key": "field_cb_pg2_tagline",
-          "label": "Tagline",
-          "name": "tagline",
-          "type": "text",
-          "wrapper": {
-            "width": "100"
-          }
-        },
-        {
-          "key": "field_cb_pg2_features",
-          "label": "Features",
-          "name": "features",
-          "type": "textarea",
-          "instructions": "One feature per line.",
-          "rows": 5,
-          "wrapper": {
-            "width": "100"
-          }
-        },
-        {
-          "key": "field_cb_pg2_cta",
-          "label": "CTA Button",
-          "name": "cta",
-          "type": "link",
-          "return_format": "array",
-          "wrapper": {
-            "width": "100"
-          }
-        }
+        { "key": "field_cb_pg2_tagline", "label": "Tagline", "name": "tagline", "type": "text", "wrapper": { "width": "100" } },
+        { "key": "field_cb_pg2_features", "label": "Features", "name": "features", "type": "textarea", "instructions": "One per line.", "rows": 5, "wrapper": { "width": "100" } },
+        { "key": "field_cb_pg2_cta", "label": "CTA Button", "name": "cta", "type": "link", "return_format": "array", "wrapper": { "width": "100" } }
       ]
     }
   ],
-  "location": [
-    [
-      {
-        "param": "block",
-        "operator": "==",
-        "value": "brainerd/pricing-grid"
-      }
-    ]
-  ],
+  "location": [[ { "param": "block", "operator": "==", "value": "brainerd/pricing-grid" } ]],
   "active": true
 }

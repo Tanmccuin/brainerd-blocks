@@ -78,12 +78,13 @@ if ( $is_preview && empty( $tiers ) ) {
 					$features_raw = $tier['features']     ?? '';
 					$cta          = $tier['cta']          ?? [];
 					$featured     = ! empty( $tier['is_featured'] );
+					$badge_text   = $tier['badge_text']   ?? __( 'Popular', 'brainerd' );
 					$features     = array_filter( array_map( 'trim', explode( "\n", $features_raw ) ) );
 					$card_class   = 'cb-pricing-grid__card' . ( $featured ? ' cb-pricing-grid__card--featured' : '' );
 				?>
 					<article class="<?php echo esc_attr( $card_class ); ?>">
 						<?php if ( $featured ) : ?>
-							<span class="cb-pricing-grid__badge"><?php esc_html_e( 'Popular', 'brainerd' ); ?></span>
+							<span class="cb-pricing-grid__badge"><?php echo esc_html( $badge_text ); ?></span>
 						<?php endif; ?>
 
 						<h3 class="cb-pricing-grid__name"><?php echo esc_html( $name ); ?></h3>

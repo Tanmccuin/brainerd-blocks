@@ -14,7 +14,8 @@
   "supports": {
     "align": ["full", "wide"],
     "anchor": true,
-    "spacing": { "padding": true, "margin": false }
+    "spacing": { "padding": true, "margin": false },
+    "jsx": true
   },
   "style": "file:./style.css",
   "textdomain": "brainerd"

@@ -89,5 +89,9 @@ if ( $is_preview && empty( $features ) ) {
 			</div>
 		<?php endif; ?>
 
+		<div class="cb-feature-list__extra">
+			<InnerBlocks />
+		</div>
+
 	</div>
 </section>

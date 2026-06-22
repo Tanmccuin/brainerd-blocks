@@ -57,6 +57,10 @@ if ( $is_preview ) {
 				<div class="cb-hero__body"><?php echo wp_kses_post( $body ); ?></div>
 			<?php endif; ?>
 
+			<div class="cb-hero__inner-blocks">
+				<InnerBlocks />
+			</div>
+
 			<div class="cb-hero__actions">
 				<?php if ( $cta_primary && ! empty( $cta_primary['url'] ) ) : ?>
 					<a class="cb-hero__cta cb-hero__cta--primary wp-element-button"

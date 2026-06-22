@@ -15,7 +15,8 @@
     "align": ["full", "wide"],
     "anchor": true,
     "spacing": { "padding": true, "margin": true },
-    "color": { "background": true, "text": true }
+    "color": { "background": true, "text": true },
+    "jsx": true
   },
   "style": "file:./style.css",
   "textdomain": "brainerd"
