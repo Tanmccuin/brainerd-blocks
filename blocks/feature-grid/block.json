@@ -8,7 +8,7 @@
   "icon": "grid-view",
   "keywords": ["features", "grid", "cards"],
   "acf": {
-    "mode": "preview",
+    "mode": "auto",
     "renderTemplate": "render.php"
   },
   "supports": {

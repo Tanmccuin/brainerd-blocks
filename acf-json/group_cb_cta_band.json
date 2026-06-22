@@ -1,43 +1,12 @@
 {
   "key": "group_cb_cta_band",
-  "title": "Block: CTA Band",
+  "title": "CTA Band",
   "fields": [
-    {
-      "key": "field_cb_cta_heading",
-      "label": "Heading",
-      "name": "heading",
-      "type": "text",
-      "default_value": "Let's talk about your next project.",
-      "wrapper": { "width": "100" }
-    },
-    {
-      "key": "field_cb_cta_subtext",
-      "label": "Subtext",
-      "name": "subtext",
-      "type": "text",
-      "default_value": "No RFPs. Just a conversation.",
-      "wrapper": { "width": "50" }
-    },
-    {
-      "key": "field_cb_cta_button",
-      "label": "Button",
-      "name": "button",
-      "type": "link",
-      "return_format": "array",
-      "wrapper": { "width": "50" }
-    },
-    {
-      "key": "field_cb_cta_footnote",
-      "label": "Footnote (optional)",
-      "name": "footnote",
-      "type": "text",
-      "instructions": "Small print below the band. Leave blank to omit.",
-      "wrapper": { "width": "100" }
-    }
+    { "key": "field_cb_cta_heading", "label": "Heading", "name": "heading", "type": "text", "default_value": "Let's talk about your next project.", "wrapper": { "width": "100" } },
+    { "key": "field_cb_cta_subtext", "label": "Subtext", "name": "subtext", "type": "text", "wrapper": { "width": "50" } },
+    { "key": "field_cb_cta_button", "label": "Button", "name": "button", "type": "link", "return_format": "array", "wrapper": { "width": "50" } },
+    { "key": "field_cb_cta_footnote", "label": "Footnote", "name": "footnote", "type": "text", "instructions": "Optional small print.", "wrapper": { "width": "100" } }
   ],
-  "location": [
-    [ { "param": "block", "operator": "==", "value": "brainerd/cta-band" } ]
-  ],
-  "active": true,
-  "description": "Full-width dark CTA band."
+  "location": [[ { "param": "block", "operator": "==", "value": "brainerd/cta-band" } ]],
+  "active": true
 }

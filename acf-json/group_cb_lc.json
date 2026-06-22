@@ -1,18 +1,75 @@
 {
   "key": "group_cb_lc",
-  "title": "Block: Logo Cloud",
+  "title": "Logo Cloud",
   "fields": [
-    { "key": "field_cb_lc_section_heading", "label": "Section Heading", "name": "section_heading", "type": "text", "default_value": "Trusted by", "wrapper": { "width": "50" } },
-    { "key": "field_cb_lc_section_subtext", "label": "Section Subtext", "name": "section_subtext", "type": "text", "wrapper": { "width": "50" } },
     {
-      "key": "field_cb_lc_logos", "label": "Logos", "name": "logos", "type": "repeater", "min": 1, "max": 20, "layout": "table",
+      "key": "field_cb_lc_section_heading",
+      "label": "Section Heading",
+      "name": "section_heading",
+      "type": "text",
+      "default_value": "Trusted by",
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_cb_lc_section_subtext",
+      "label": "Section Subtext",
+      "name": "section_subtext",
+      "type": "text",
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_cb_lc_logos",
+      "label": "Logos",
+      "name": "logos",
+      "type": "repeater",
+      "min": 1,
+      "max": 20,
+      "layout": "table",
       "sub_fields": [
-        { "key": "field_cb_lc_logo", "label": "Logo", "name": "logo", "type": "image", "return_format": "array", "preview_size": "thumbnail", "wrapper": { "width": "30" } },
-        { "key": "field_cb_lc_name", "label": "Name", "name": "name", "type": "text", "wrapper": { "width": "35" } },
-        { "key": "field_cb_lc_url", "label": "URL (optional)", "name": "url", "type": "url", "wrapper": { "width": "35" } }
+        {
+          "key": "field_cb_lc_logo",
+          "label": "Logo",
+          "name": "logo",
+          "type": "image",
+          "return_format": "array",
+          "preview_size": "thumbnail",
+          "wrapper": {
+            "width": "30"
+          }
+        },
+        {
+          "key": "field_cb_lc_name",
+          "label": "Name",
+          "name": "name",
+          "type": "text",
+          "wrapper": {
+            "width": "35"
+          }
+        },
+        {
+          "key": "field_cb_lc_url",
+          "label": "URL (optional)",
+          "name": "url",
+          "type": "url",
+          "wrapper": {
+            "width": "35"
+          }
+        }
       ]
     }
   ],
-  "location": [[ { "param": "block", "operator": "==", "value": "brainerd/logo-cloud" } ]],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "brainerd/logo-cloud"
+      }
+    ]
+  ],
   "active": true
 }

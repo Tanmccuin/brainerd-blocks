@@ -8,7 +8,7 @@
   "icon": "email",
   "keywords": ["contact", "form", "email"],
   "acf": {
-    "mode": "preview",
+    "mode": "auto",
     "renderTemplate": "render.php"
   },
   "supports": {
