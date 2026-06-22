@@ -1,22 +1,111 @@
 {
   "key": "group_cb_team",
-  "title": "Block: Team Grid",
+  "title": "Team Grid",
   "fields": [
-    { "key": "field_cb_team_section_heading", "label": "Section Heading", "name": "section_heading", "type": "text", "wrapper": { "width": "50" } },
-    { "key": "field_cb_team_section_subtext", "label": "Section Subtext", "name": "section_subtext", "type": "text", "wrapper": { "width": "50" } },
     {
-      "key": "field_cb_team_members", "label": "Team Members", "name": "members", "type": "repeater", "min": 1, "max": 20, "layout": "block",
+      "key": "field_cb_team_section_heading",
+      "label": "Section Heading",
+      "name": "section_heading",
+      "type": "text",
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_cb_team_section_subtext",
+      "label": "Section Subtext",
+      "name": "section_subtext",
+      "type": "text",
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_cb_team_members",
+      "label": "Team Members",
+      "name": "members",
+      "type": "repeater",
+      "min": 1,
+      "max": 20,
+      "layout": "block",
       "sub_fields": [
-        { "key": "field_cb_team_photo", "label": "Photo", "name": "photo", "type": "image", "return_format": "array", "preview_size": "medium", "wrapper": { "width": "25" } },
-        { "key": "field_cb_team_name", "label": "Name", "name": "name", "type": "text", "wrapper": { "width": "25" } },
-        { "key": "field_cb_team_role", "label": "Role", "name": "role", "type": "text", "wrapper": { "width": "25" } },
-        { "key": "field_cb_team_bio", "label": "Bio (optional)", "name": "bio", "type": "textarea", "rows": 2, "wrapper": { "width": "25" } },
-        { "key": "field_cb_team_linkedin", "label": "LinkedIn URL", "name": "linkedin", "type": "url", "wrapper": { "width": "33" } },
-        { "key": "field_cb_team_twitter", "label": "X / Twitter URL", "name": "twitter", "type": "url", "wrapper": { "width": "34" } },
-        { "key": "field_cb_team_email", "label": "Email", "name": "email", "type": "email", "wrapper": { "width": "33" } }
+        {
+          "key": "field_cb_team_photo",
+          "label": "Photo",
+          "name": "photo",
+          "type": "image",
+          "return_format": "array",
+          "preview_size": "medium",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cb_team_name",
+          "label": "Name",
+          "name": "name",
+          "type": "text",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cb_team_role",
+          "label": "Role",
+          "name": "role",
+          "type": "text",
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cb_team_bio",
+          "label": "Bio (optional)",
+          "name": "bio",
+          "type": "textarea",
+          "rows": 2,
+          "wrapper": {
+            "width": "25"
+          }
+        },
+        {
+          "key": "field_cb_team_linkedin",
+          "label": "LinkedIn URL",
+          "name": "linkedin",
+          "type": "url",
+          "wrapper": {
+            "width": "33"
+          }
+        },
+        {
+          "key": "field_cb_team_twitter",
+          "label": "X / Twitter URL",
+          "name": "twitter",
+          "type": "url",
+          "wrapper": {
+            "width": "34"
+          }
+        },
+        {
+          "key": "field_cb_team_email",
+          "label": "Email",
+          "name": "email",
+          "type": "email",
+          "wrapper": {
+            "width": "33"
+          }
+        }
       ]
     }
   ],
-  "location": [[ { "param": "block", "operator": "==", "value": "brainerd/team-grid" } ]],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "brainerd/team-grid"
+      }
+    ]
+  ],
   "active": true
 }

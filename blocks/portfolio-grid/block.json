@@ -8,7 +8,7 @@
   "icon": "grid-view",
   "keywords": ["portfolio", "grid", "work", "projects"],
   "acf": {
-    "mode": "preview",
+    "mode": "auto",
     "renderTemplate": "render.php"
   },
   "supports": {

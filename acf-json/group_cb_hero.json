@@ -1,66 +1,14 @@
 {
   "key": "group_cb_hero",
-  "title": "Block: Hero",
+  "title": "Hero",
   "fields": [
-    {
-      "key": "field_cb_hero_eyebrow",
-      "label": "Eyebrow",
-      "name": "eyebrow",
-      "type": "text",
-      "instructions": "Small uppercase label above the heading. e.g. 'Vermont Web Studio'",
-      "default_value": "Vermont Web Studio",
-      "wrapper": { "width": "50" }
-    },
-    {
-      "key": "field_cb_hero_heading",
-      "label": "Heading",
-      "name": "heading",
-      "type": "text",
-      "required": 1,
-      "default_value": "WordPress Design, Development & Consulting",
-      "wrapper": { "width": "100" }
-    },
-    {
-      "key": "field_cb_hero_body",
-      "label": "Body copy",
-      "name": "body",
-      "type": "wysiwyg",
-      "toolbar": "basic",
-      "media_upload": 0,
-      "wrapper": { "width": "100" }
-    },
-    {
-      "key": "field_cb_hero_cta_primary",
-      "label": "Primary CTA",
-      "name": "cta_primary",
-      "type": "link",
-      "return_format": "array",
-      "wrapper": { "width": "50" }
-    },
-    {
-      "key": "field_cb_hero_cta_secondary",
-      "label": "Secondary CTA",
-      "name": "cta_secondary",
-      "type": "link",
-      "return_format": "array",
-      "wrapper": { "width": "50" }
-    },
-    {
-      "key": "field_cb_hero_mosaic_images",
-      "label": "Mosaic Images (4)",
-      "name": "mosaic_images",
-      "type": "gallery",
-      "instructions": "Select exactly 4 images for the mosaic grid. Landscape crops work best.",
-      "min": 0,
-      "max": 4,
-      "return_format": "array",
-      "preview_size": "medium",
-      "wrapper": { "width": "100" }
-    }
+    { "key": "field_cb_hero_eyebrow", "label": "Eyebrow", "name": "eyebrow", "type": "text", "placeholder": "e.g. Vermont Web Studio", "wrapper": { "width": "50" } },
+    { "key": "field_cb_hero_heading", "label": "Heading", "name": "heading", "type": "text", "required": 1, "wrapper": { "width": "100" } },
+    { "key": "field_cb_hero_body", "label": "Body", "name": "body", "type": "wysiwyg", "toolbar": "basic", "media_upload": 0, "wrapper": { "width": "100" } },
+    { "key": "field_cb_hero_cta_primary", "label": "Primary button", "name": "cta_primary", "type": "link", "return_format": "array", "wrapper": { "width": "50" } },
+    { "key": "field_cb_hero_cta_secondary", "label": "Secondary button", "name": "cta_secondary", "type": "link", "return_format": "array", "wrapper": { "width": "50" } },
+    { "key": "field_cb_hero_mosaic_images", "label": "Mosaic images", "name": "mosaic_images", "type": "gallery", "instructions": "4 images. Landscape crops work best. Leave empty for auto.", "min": 0, "max": 4, "return_format": "array", "preview_size": "medium", "wrapper": { "width": "100" } }
   ],
-  "location": [
-    [ { "param": "block", "operator": "==", "value": "brainerd/hero" } ]
-  ],
-  "active": true,
-  "description": "Fields for the split hero block."
+  "location": [[ { "param": "block", "operator": "==", "value": "brainerd/hero" } ]],
+  "active": true
 }

@@ -8,7 +8,7 @@
   "icon": "money-alt",
   "keywords": ["pricing", "plans", "tiers", "hosting", "packages"],
   "acf": {
-    "mode": "preview",
+    "mode": "auto",
     "renderTemplate": "render.php"
   },
   "supports": {

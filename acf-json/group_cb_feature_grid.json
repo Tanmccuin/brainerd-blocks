@@ -1,6 +1,6 @@
 {
   "key": "group_cb_feature_grid",
-  "title": "Block: Feature Grid",
+  "title": "Feature Grid",
   "fields": [
     {
       "key": "field_cb_fg_heading",
@@ -47,6 +47,5 @@
       }
     ]
   ],
-  "active": true,
-  "description": "Fields for the Feature Grid block."
+  "active": true
 }

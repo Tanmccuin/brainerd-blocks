@@ -7,7 +7,7 @@
   "category": "brainerd",
   "icon": "editor-help",
   "keywords": ["faq", "accordion", "questions", "toggle", "collapse"],
-  "acf": { "mode": "preview", "renderTemplate": "render.php" },
+  "acf": { "mode": "auto", "renderTemplate": "render.php" },
   "supports": { "align": ["wide", "full"], "anchor": true },
   "style": "file:./style.css",
   "textdomain": "brainerd"

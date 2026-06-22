@@ -1,6 +1,6 @@
 {
   "key": "group_cb_contact_form",
-  "title": "Block: Contact Form",
+  "title": "Contact Form",
   "fields": [
     {
       "key": "field_cb_cf_submit_label",
@@ -8,12 +8,19 @@
       "name": "submit_label",
       "type": "text",
       "default_value": "Send message",
-      "wrapper": { "width": "50" }
+      "wrapper": {
+        "width": "50"
+      }
     }
   ],
   "location": [
-    [ { "param": "block", "operator": "==", "value": "brainerd/contact-form" } ]
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "brainerd/contact-form"
+      }
+    ]
   ],
-  "active": true,
-  "description": "Contact form block — submit label only; form fields are hardcoded in render.php."
+  "active": true
 }

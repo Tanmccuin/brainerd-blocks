@@ -1,17 +1,66 @@
 {
   "key": "group_cb_faq",
-  "title": "Block: FAQ Accordion",
+  "title": "FAQ Accordion",
   "fields": [
-    { "key": "field_cb_faq_section_heading", "label": "Section Heading", "name": "section_heading", "type": "text", "wrapper": { "width": "50" } },
-    { "key": "field_cb_faq_section_subtext", "label": "Section Subtext", "name": "section_subtext", "type": "text", "wrapper": { "width": "50" } },
     {
-      "key": "field_cb_faq_items", "label": "FAQ Items", "name": "items", "type": "repeater", "min": 1, "max": 30, "layout": "block",
+      "key": "field_cb_faq_section_heading",
+      "label": "Section Heading",
+      "name": "section_heading",
+      "type": "text",
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_cb_faq_section_subtext",
+      "label": "Section Subtext",
+      "name": "section_subtext",
+      "type": "text",
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_cb_faq_items",
+      "label": "FAQ Items",
+      "name": "items",
+      "type": "repeater",
+      "min": 1,
+      "max": 30,
+      "layout": "block",
       "sub_fields": [
-        { "key": "field_cb_faq_question", "label": "Question", "name": "question", "type": "text", "wrapper": { "width": "100" } },
-        { "key": "field_cb_faq_answer", "label": "Answer", "name": "answer", "type": "wysiwyg", "toolbar": "basic", "media_upload": 0, "tabs": "visual", "wrapper": { "width": "100" } }
+        {
+          "key": "field_cb_faq_question",
+          "label": "Question",
+          "name": "question",
+          "type": "text",
+          "wrapper": {
+            "width": "100"
+          }
+        },
+        {
+          "key": "field_cb_faq_answer",
+          "label": "Answer",
+          "name": "answer",
+          "type": "wysiwyg",
+          "toolbar": "basic",
+          "media_upload": 0,
+          "tabs": "visual",
+          "wrapper": {
+            "width": "100"
+          }
+        }
       ]
     }
   ],
-  "location": [[ { "param": "block", "operator": "==", "value": "brainerd/faq-accordion" } ]],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "brainerd/faq-accordion"
+      }
+    ]
+  ],
   "active": true
 }
