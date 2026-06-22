@@ -1,0 +1,13 @@
+{
+  "key": "group_cb_ph",
+  "title": "Portfolio Header",
+  "fields": [
+    { "key": "field_cb_ph_role", "label": "Role / scope", "name": "role", "type": "text", "placeholder": "e.g. Design & Development", "wrapper": { "width": "50" } },
+    { "key": "field_cb_ph_heading", "label": "Heading", "name": "heading", "type": "text", "instructions": "Leave blank to use post title.", "wrapper": { "width": "50" } },
+    { "key": "field_cb_ph_description", "label": "Description", "name": "description", "type": "textarea", "rows": 3, "wrapper": { "width": "100" } },
+    { "key": "field_cb_ph_project_url", "label": "Live site URL", "name": "project_url", "type": "url", "wrapper": { "width": "50" } },
+    { "key": "field_cb_ph_featured_image", "label": "Featured screenshot", "name": "featured_image", "type": "image", "return_format": "array", "preview_size": "medium", "instructions": "Falls back to post featured image.", "wrapper": { "width": "50" } }
+  ],
+  "location": [[ { "param": "block", "operator": "==", "value": "brainerd/portfolio-header" } ]],
+  "active": true
+}

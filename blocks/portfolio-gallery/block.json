@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brainerd/portfolio-gallery",
+  "title": "Portfolio Gallery",
+  "description": "Masonry image grid for project screenshots. Drag to reorder in the editor.",
+  "category": "brainerd",
+  "icon": "format-gallery",
+  "keywords": ["gallery", "masonry", "screenshots", "portfolio", "images"],
+  "acf": { "mode": "auto", "renderTemplate": "render.php" },
+  "supports": { "align": ["wide", "full"], "anchor": true },
+  "style": "file:./style.css",
+  "textdomain": "brainerd"
+}

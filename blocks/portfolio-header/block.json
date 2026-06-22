@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brainerd/portfolio-header",
+  "title": "Portfolio Header",
+  "description": "Project header for portfolio entries — role, title, description, and optional live site CTA.",
+  "category": "brainerd",
+  "icon": "portfolio",
+  "keywords": ["portfolio", "project", "case study", "header"],
+  "acf": { "mode": "auto", "renderTemplate": "render.php" },
+  "supports": { "align": ["wide", "full"], "anchor": true, "jsx": true },
+  "style": "file:./style.css",
+  "textdomain": "brainerd"
+}
