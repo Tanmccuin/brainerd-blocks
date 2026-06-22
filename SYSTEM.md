@@ -182,6 +182,56 @@ Repeater items rendered as cards:
 }
 ```
 
+## Human editability (mandatory)
+
+Every block MUST be usable by a non-technical person in the WordPress editor
+without AI assistance. The AI builds the block; the human maintains content
+after handoff. This is non-negotiable.
+
+### Rules for every block:
+- **Every visible text** must come from an ACF field, not hardcoded in render.php.
+  If the user can see it on the frontend, they must be able to change it in the editor.
+- **Images** must come from ACF image/gallery fields or WordPress featured images.
+  Never hardcode image paths in templates.
+- **Icons** should use a select field (icon key map) so users can swap them from a
+  dropdown, not by editing SVG code.
+- **Colors** used as accents or highlights should inherit from theme tokens. If a block
+  needs a per-instance color override, add a color picker field.
+- **Links/buttons** should use ACF link fields (which give users a UI for URL, text,
+  and target) — never hardcode URLs.
+- **Conditional content** should use ACF true/false toggles with conditional logic
+  to show/hide related fields (e.g., "Featured?" toggle shows badge text field).
+
+### InnerBlocks for flexible areas
+For blocks that benefit from freeform content (hero body, CTA extras, feature
+descriptions), enable InnerBlocks:
+
+1. Add `"jsx": true` to the block.json `supports` object
+2. Add `<InnerBlocks />` in render.php where freeform content should appear
+3. Wrap it in a styled container div for consistent spacing
+
+This lets users drop core WordPress blocks (paragraphs, images, buttons, lists)
+inside your custom block — without losing the block's structural layout.
+
+Use InnerBlocks for: content-heavy areas, "extra content" zones, flexible body sections.
+Do NOT use InnerBlocks for: repeater items, structured data, anything with a fixed schema.
+
+### ACF field UX guidelines
+- **Labels**: short, clear, no jargon. "Heading" not "Section H2 Text Override".
+- **Instructions**: one sentence max. Use `placeholder` for format examples instead.
+- **Wrapper widths**: use 50/50 or 33/33/33 splits to keep fields side-by-side and
+  reduce vertical scrolling in the sidebar.
+- **Conditional logic**: hide fields that aren't relevant. Don't show badge text if
+  the featured toggle is off.
+- **Repeater layout**: use `"layout": "block"` for complex sub-fields,
+  `"layout": "table"` for simple 2-3 column data.
+- **Field group titles**: short. "Hero" not "Block: Hero Section Configuration".
+
+### mode: auto
+All blocks use `"mode": "auto"` which shows the rendered preview by default.
+Users click the block to switch to edit mode (inline fields). This gives both
+a visual preview AND access to the fields without the sidebar cramping.
+
 ## Extending a block
 
 When using AI to extend an existing block:
@@ -190,9 +240,10 @@ When using AI to extend an existing block:
 2. **Update render.php** — add `get_field()` calls and output markup
 3. **Update style.css** — follow existing BEM naming, use tokens
 4. **Maintain preview fallbacks** — keep the `$is_preview` defaults working
-5. **Test dark mode** — if you used tokens, it should work automatically
-6. **Test responsive** — check 380px and 1200px
-7. **Check accessibility** — semantic HTML, ARIA where needed, focus states
+5. **Maintain human editability** — can the user change this value in the editor?
+6. **Test dark mode** — if you used tokens, it should work automatically
+7. **Test responsive** — check 380px and 1200px
+8. **Check accessibility** — semantic HTML, ARIA where needed, focus states
 
 ## Accessibility checklist (per block)
 - [ ] Semantic wrapper element (`<section>`, `<article>`, `<aside>`)
@@ -202,3 +253,4 @@ When using AI to extend an existing block:
 - [ ] Color contrast meets WCAG AA
 - [ ] `aria-hidden="true"` on decorative elements (icons, separators)
 - [ ] `prefers-reduced-motion` respected for any animations
+- [ ] All visible content editable by the user in the block editor
