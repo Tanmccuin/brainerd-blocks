@@ -8,7 +8,7 @@
   "icon": "list-view",
   "keywords": ["features", "process", "steps", "benefits", "checklist"],
   "acf": { "mode": "auto", "renderTemplate": "render.php" },
-  "supports": { "align": ["wide", "full"], "anchor": true, "jsx": true },
+  "supports": { "align": ["wide", "full"], "anchor": true },
   "style": "file:./style.css",
   "textdomain": "brainerd"
 }

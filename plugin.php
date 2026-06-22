@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name:       Brainerd Blocks
- * Description:       ACF Gutenberg blocks, patterns, and block category for the Br<em>ai</em>nerd theme ecosystem.
- * Version:           0.1.07
+ * Description:       ACF Gutenberg blocks, patterns, and block category for the Brainerd theme ecosystem.
+ * Version:           0.1.08
  * Requires PHP:      8.0
  * Requires at least: 6.4
  * Author:            Tannermooredesign

@@ -1,0 +1,104 @@
+/* Portfolio Header block */
+
+.cb-portfolio-header {
+	background-color: var(--tmd-bg);
+	padding-block: var(--wp--preset--spacing--80, 6rem) var(--wp--preset--spacing--70, 4rem);
+}
+
+.cb-portfolio-header__inner {
+	max-width: var(--wp--style--global--wide-size, 1200px);
+	margin-inline: auto;
+	display: grid;
+	grid-template-columns: 1fr 1.1fr;
+	gap: 3rem;
+	align-items: center;
+}
+
+.cb-portfolio-header__role {
+	font-size: 0.6875rem;
+	font-weight: 500;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--tmd-accent);
+	margin: 0 0 1rem;
+}
+
+.cb-portfolio-header__title {
+	font-family: 'Fraunces', serif;
+	font-weight: 700;
+	font-size: clamp(2rem, 5vw, 3rem);
+	color: var(--tmd-heading);
+	margin: 0 0 1.25rem;
+	line-height: 1.1;
+	letter-spacing: -0.02em;
+}
+
+.cb-portfolio-header__description {
+	font-size: 0.9375rem;
+	line-height: 1.7;
+	color: var(--tmd-body);
+	margin: 0 0 2rem;
+	max-width: 480px;
+}
+.cb-portfolio-header__description p { margin: 0; }
+
+.cb-portfolio-header__actions {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+}
+
+.cb-portfolio-header__cta {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	background: var(--tmd-accent);
+	color: #fff;
+	padding: 0.6875rem 1.5rem;
+	border-radius: var(--tmd-radius-sm);
+	font-size: 0.8125rem;
+	font-weight: 500;
+	text-decoration: none;
+	transition: background-color var(--tmd-transition);
+}
+.cb-portfolio-header__cta:hover { background: var(--tmd-accent-dark); color: #fff; }
+.cb-portfolio-header__cta svg { width: 14px; height: 14px; }
+
+.cb-portfolio-header__back {
+	font-size: 0.8125rem;
+	font-weight: 500;
+	color: var(--tmd-muted);
+	text-decoration: none;
+	transition: color var(--tmd-transition);
+}
+.cb-portfolio-header__back:hover { color: var(--tmd-accent); }
+
+.cb-portfolio-header__extra:empty { display: none; }
+
+.cb-portfolio-header__featured {
+	border-radius: var(--tmd-radius-lg);
+	overflow: hidden;
+}
+.cb-portfolio-header__featured img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+@media (max-width: 900px) {
+	.cb-portfolio-header__inner {
+		grid-template-columns: 1fr;
+	}
+	.cb-portfolio-header__featured { order: -1; }
+	.cb-portfolio-header { padding-block: var(--wp--preset--spacing--70, 4rem) var(--wp--preset--spacing--60, 2.5rem); }
+}
+
+@media (max-width: 600px) {
+	.cb-portfolio-header { padding-inline: 1.25rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.cb-portfolio-header__cta,
+	.cb-portfolio-header__back { transition: none; }
+}

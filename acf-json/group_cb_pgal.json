@@ -1,0 +1,30 @@
+{
+  "key": "group_cb_pgal",
+  "title": "Portfolio Gallery",
+  "fields": [
+    {
+      "key": "field_cb_pgal_images",
+      "label": "Screenshots",
+      "name": "images",
+      "type": "gallery",
+      "instructions": "Drag to reorder. Landscape and portrait images both work.",
+      "return_format": "array",
+      "preview_size": "medium",
+      "library": "all",
+      "min": 0,
+      "max": 30,
+      "wrapper": { "width": "100" }
+    },
+    {
+      "key": "field_cb_pgal_columns",
+      "label": "Columns",
+      "name": "columns",
+      "type": "select",
+      "choices": { "2": "2 columns", "3": "3 columns" },
+      "default_value": "2",
+      "wrapper": { "width": "50" }
+    }
+  ],
+  "location": [[ { "param": "block", "operator": "==", "value": "brainerd/portfolio-gallery" } ]],
+  "active": true
+}
